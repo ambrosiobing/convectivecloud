@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MBTJRZ7');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load staticfiles %}
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'income/images/icons/favicon.png' %}" >
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'income/images/convective-cloud-logo-transparent-16x16.ico' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-24x24.png' %}" sizes="24x24" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-32x32.png' %}" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-48x48.png' %}" sizes="48x48" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-96x96.png' %}" sizes="96x96" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-128x128.png' %}" sizes="128x128" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-196x196.png' %}" sizes="196x196" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-57x57.png' %}" sizes="57x57" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-60x60.png' %}" sizes="60x60" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-72x72.png' %}" sizes="72x72" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-76x76.png' %}" sizes="76x76" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-114x114.png' %}" sizes="114x114" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-120x120.png' %}" sizes="120x120" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-144x144.png' %}" sizes="144x144" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-152x152.png' %}" sizes="152x152" />
+    <!--<meta name="application-name" content=" " />-->
+    <!--<meta name="msapplication-TileColor" content="#FFFFFF" />-->
+    <meta name="msapplication-square64x64logo" content="{% static 'income/images/convective-cloud-logo-transparent-64x64.png' %}" />
+    <meta name="msapplication-square70x70logo" content="{% static 'income/images/convective-cloud-logo-transparent-70x70.png' %}" />
+    <meta name="msapplication-TileImage" content="{% static 'income/images/convective-cloud-logo-transparent-144x144.png' %}" />
+    <meta name="msapplication-square150x150logo" content="{% static 'income/images/convective-cloud-logo-transparent-150x150.png' %}" />
+    <meta name="msapplication-square310x150logo" content="{% static 'income/images/convective-cloud-logo-transparent-310x150.png' %}" />
+    <meta name="msapplication-square310x310logo" content="{% static 'income/images/convective-cloud-logo-transparent-310x310.png' %}" />	
+    <!--<title>{{ title }} convective.cloud</title>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/site.css' %}" />
+    <script src="{% static 'income/scripts/modernizr-2.6.2.js' %}"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120910340-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120910340-1');
+    </script>
+
+</head>
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBTJRZ7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container head-section">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand"><img id="logo-main-menu" src="{% static 'income/images/convective-cloud-logo-transparent-16x16.png' %}"></a>
+            </div>
+        </div>
+    </div>
+	<div class="container" style="width: auto">
+		<div class="row">
+			<div class="col-md-4">
+				<br><br><br><b>Purpose:</b> <br>Predict whether income exceeds $50K/yr based on census data<br><br>
+				<br><b>Adult Census Income Binary Classification dataset:</b> <br>
+				A subset of the 1994 Census database, using working adults over the age of 16 with an adjusted income index of > 100.
+
+				<br><br>
+				<br><b>Data source:</b> <br>	
+					{% load staticfiles %}
+					<a href="https://archive.ics.uci.edu/ml/datasets/adult">
+						<img id="uci-logo" align="middle" src="{% static 'income/images/uci-logo-ML-repos.gif' %}">
+					</a>
+				<br><b>Related Research: </b> <br>Kohavi, R., Becker, B., (1996). 
+				UCI Machine Learning Repository 
+				Irvine, CA: University of California, School of Information and Computer Science
+				<br>
+			</div>			
+			<div class="col-md-4">
+				<form id="myCensusForm" class="form-inline" method="post" action="result" target="_self">
+                {% csrf_token %}
+					<div class="form-group">
+						<div class="input-group">
+							<div>
+								<label for="age"><br>Age?</label>
+								<div>
+									<select name="age" id="age" class="selectpicker form-control">
+										<option selected disabled>Select age</option>
+										{% for age in data.age %}
+										    <option value="{{ age.Age }}">{{ age.Age }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<!--<div>
+								<label for="workclass">?</label>
+								<input name="workclass" id="workclass" value="State-gov">
+							</div>
+							<div>
+								<label for="fnlwgt">fnlwgt?</label>
+								<input name="fnlwgt" id="fnlwgt" value="77516">
+							</div>-->
+							<div>
+								<label for="education">Education?</label>
+								<div>
+									<select name="education" id="education" class="selectpicker form-control">
+										<option selected disabled>Select education</option>
+										{% for edu in data.edu %}
+										    <option value="{{ edu.Edu }}">{{ edu.Edu }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="years_education">Number of years in education?</label>
+								<div>
+									<select name="years_education" id="years_education" class="selectpicker form-control">
+										<option selected disabled>Select number of years</option>
+										{% for num in data.num %}
+										    <option value="{{ num.Num }}">{{ num.Num }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="marital_status">Marital status?</label>
+								<div>								
+									<select name="marital_status" id="marital_status" class="selectpicker form-control">
+										<option selected disabled>Select marital status</option>
+										{% for sta in data.sta %}
+										    <option value="{{ sta.Sta }}">{{ sta.Sta }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="occupation">Occupation?</label>
+								<div>
+									<select name="occupation" id="occupation" class="selectpicker form-control">
+										<option selected disabled>Select occupation</option>
+										{% for occ in data.occ %}
+										    <option value="{{ occ.Occ }}">{{ occ.Occ }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="relationship">Relationship?</label>
+								<div>
+									<select name="relationship" id="relationship" class="selectpicker form-control">
+										<option selected disabled>Select relationship</option>
+										{% for rel in data.rel %}
+										    <option value="{{ rel.Rel }}">{{ rel.Rel }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="race">Ethnicity/Race?</label>
+								<div>
+									<select name="race" id="race" class="selectpicker form-control">
+										<option selected disabled>Select ethnicity/race</option>
+										{% for rac in data.rac %}
+										    <option value="{{ rac.Rac }}">{{ rac.Rac }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div>
+								<label for="gender">Gender?</label>
+								<div>
+									<select name="gender" id="gender" class="selectpicker form-control">
+										<option selected disabled>Select Gender</option>
+										{% for sex in data.sex %}
+										    <option value="{{ sex.Sex }}">{{ sex.Sex }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<!--<div>
+								<label for="capital-gain">capital-gain?</label>
+								<input name="capital-gain" id="capital-gain" value="2174">
+							</div>
+							<div>
+								<label for="capital-loss">capital-loss?</label>
+								<input name="capital-loss" id="capital-loss" value="0">
+							</div>-->
+							<div>
+								<label for="hours_per_week">Number of working hours-per-week?</label>
+								<div>
+									<select name="hours_per_week" id="hours_per_week" class="selectpicker form-control">
+										<option selected disabled>Select hours-per-week</option>
+										{% for hrs in data.hrs %}
+										    <option value="{{ hrs.Hrs }}">{{ hrs.Hrs }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<!--<div>
+								<label for="native-country">native-country?</label>
+								<input name="native-country" id="native-country" value="United-States">
+							</div>
+							<div>
+								<label for="income">income?</label>
+								<input name="income" id="income" value="49217">
+							</div>-->
+						</div>
+						<br>
+						<h3><button class="btn btn-default" id="button-yellow" type="submit"> Predict the person's earnings</button></h3>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-4">
+				<b><br><br><br><br><br><br>Result:</b> <br>
+				
+			</div>
+		</div>	
+	</div>
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <footer>
+            <div class="row">
+                
+                <div class="col-md-12" style="vertical-align: middle; text-align:center;">
+                    <!--
+                    <p>
+                        My Profile :
+                        <a class="btn btn-xs" href="https://www.linkedin.com/in/joseph-ambrose-pagaran-phd-04b466ba" target="_blank">LinkedIn </a>
+                        <a class="btn btn-xs" href="http://www.saturnlightning.oeaw.ac.at/project.html" target="_blank">OeAW </a>
+                        <a class="btn btn-xs" href="http://ambrosiobing.wix.com/ambrosiobingcodes" target="_blank">wix</a>
+                    </p>
+                    -->
+                <!--</div>
+                <div class="col-md-8" style="display: table-cell; vertical-align: middle;">-->
+
+                    <!-- Sharingbutton LinkedIn -->
+                    <a class="resp-sharing-button__link" href="https://www.linkedin.com/in/joseph-ambrose-pagaran-phd-04b466ba" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z" /></svg>
+                            </div>
+                        </div>
+                    </a> 
+
+                    <!-- Sharingbutton IWF -->
+                    <a class="resp-sharing-button__link soc-link" href="http://www.saturnlightning.oeaw.ac.at/project.html" target="_blank" title="IWF" aria-label="">
+                        <div class="resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                {% load staticfiles %}
+                                <img src="{% static 'income/images/IWF_logo.svg' %}">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton E-Mail -->
+                    <a class="resp-sharing-button__link" href="mailto:?subject=Convective%20Cloud&amp;body=http%3A%2F%2Fconvective.cloud" target="_self" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" /></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton Wix -->
+                    <a class="resp-sharing-button__link soc-link" href="http://ambrosiobing.wix.com/ambrosiobingcodes" target="_blank" title="Wix" aria-label="">
+                        <div class="resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                {% load staticfiles %}
+                                <img src="{% static 'income/images/icon-wix.svg' %}">
+                            </div>
+                        </div>
+                    </a>
+                    <p>&copy; 2018 <a class="btn btn-sm" href="/">convective.cloud</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+	{% block scripts %}
+    <script src="{% static 'income/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'income/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'income/scripts/respond.js' %}"></script>
+	<script>
+		function myFunction() {
+  			document.getElementById("myCensusForm").reset();
+			document.forms["myCensusForm"].reset();
+			}
+	</script>
+    {% endblock %}
+</body>
+</html>

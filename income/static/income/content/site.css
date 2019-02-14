@@ -1,0 +1,111 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+#uci-logo {
+	margin-left: auto;
+	margin-right: auto;
+    width: 52%;
+	display: block
+}
+
+#azure-boosted-logo {
+  width:85%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+#wiki-azure-logo {
+  width:45%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.head-section {
+    /**height: 40px;**/
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.soc-link img {
+	height: 33px;
+}
+
+#button-yellow {
+    color: #1f21ad;
+    background-color: #e6fca8;
+    border-color: #70b3ff;
+}
+
+.tingle-no-display {
+    display: none;
+  }
+.tingle-hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+a .logo-img img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+div .modal-azure-logo img {
+    object-fit: contain;
+    padding-right: 30px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 75vw;
+    height: 75vh;
+}

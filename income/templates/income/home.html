@@ -1,0 +1,94 @@
+{% extends "income/base.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <article class="container" style="vertical-align: middle;  vertical-align: middle; height: auto">
+        <div class="row">
+            <div class="col-md-4" style="vertical-align: middle; text-align:center;">
+                {% load staticfiles %}
+                <img src="{% static 'income/images/convective-cloud-text-logo-vertical-30.png' %}" >
+            </div>
+            <div class="col-md-8" style="display: table-cell; vertical-align: middle; height: 100px;">
+                <h1></h1><br />
+                <p class="lead">Improving your back-end with cloud-based machine learning APIs</p>
+                <!--<p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+                <a class="btn--primary js-tingle-modal-0">
+                    <div class="logo-img">
+                        <img id="wiki-azure-logo" align="middle" src="{% static 'income/images/cc-front-mid-backend architecture-revised.jpg' %}">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </article>
+</div>
+
+<article class="wrapper style2">
+    <article id="work">
+        <header>
+            <!--<h2>Here's all the stuff I do.</h2>-->
+            <!--<p>Odio turpis amet sed consequat eget posuere consequat.</p>-->
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <section class="box style1">
+                        <!--<span class="icon featured fa-comments-o"></span>-->
+                        <h4>Predict if a person earns > $50K </h4>
+                        <p></p>
+                        <p><a id="button-yellow" class="btn btn-default" href="form" target="_self">Try it yourself &raquo;</a></p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="box style1">
+                        <!--<span class="icon featured fa-camera-retro"></span>-->
+                        <h3></h3>
+                        <p></p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <section class="box style1">
+                        <!--<span class="icon featured fa-thumbs-o-up"></span>-->
+                        <h3></h3>
+                        <p></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--<footer>
+                <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+                <a href="#portfolio" class="button big scrolly">See some of my recent work</a>
+            </footer>-->
+    </article>
+</article>
+<!-- Tingle modals -->
+<div class="tingle-no-display tingle-footer-button-close0">
+   <div class="modal-azure-logo" >
+        <img align="middle" src="{% static 'income/images/cc-front-mid-backend architecture-revised.jpg' %}">
+    </div>
+</div>
+
+<!--
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Flask gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://flask.pocoo.org/docs/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft Azure</h2>
+        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
+        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+    </div>
+</div>
+-->
+{% endblock %}

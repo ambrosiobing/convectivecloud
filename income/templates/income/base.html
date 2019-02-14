@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MBTJRZ7');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load staticfiles %}
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'income/images/icons/favicon.png' %}" >
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'income/images/convective-cloud-logo-transparent-16x16.ico' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-24x24.png' %}" sizes="24x24" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-32x32.png' %}" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-48x48.png' %}" sizes="48x48" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-96x96.png' %}" sizes="96x96" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-128x128.png' %}" sizes="128x128" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'income/images/convective-cloud-logo-transparent-196x196.png' %}" sizes="196x196" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-57x57.png' %}" sizes="57x57" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-60x60.png' %}" sizes="60x60" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-72x72.png' %}" sizes="72x72" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-76x76.png' %}" sizes="76x76" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-114x114.png' %}" sizes="114x114" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-120x120.png' %}" sizes="120x120" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-144x144.png' %}" sizes="144x144" />
+    <link rel="apple-touch-icon" href="{% static 'income/images/convective-cloud-logo-transparent-152x152.png' %}" sizes="152x152" />
+    <!--<meta name="application-name" content=" " />-->
+    <!--<meta name="msapplication-TileColor" content="#FFFFFF" />-->
+    <meta name="msapplication-square64x64logo" content="{% static 'income/images/convective-cloud-logo-transparent-64x64.png' %}" />
+    <meta name="msapplication-square70x70logo" content="{% static 'income/images/convective-cloud-logo-transparent-70x70.png' %}" />
+    <meta name="msapplication-TileImage" content="{% static 'income/images/convective-cloud-logo-transparent-144x144.png' %}" />
+    <meta name="msapplication-square150x150logo" content="{% static 'income/images/convective-cloud-logo-transparent-150x150.png' %}" />
+    <meta name="msapplication-square310x150logo" content="{% static 'income/images/convective-cloud-logo-transparent-310x150.png' %}" />
+    <meta name="msapplication-square310x310logo" content="{% static 'income/images/convective-cloud-logo-transparent-310x310.png' %}" />	
+    <!--<title>{{ title }} convective.cloud</title>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/tingle.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'income/content/site.css' %}" />
+
+    <script src="{% static 'income/scripts/modernizr-2.6.2.js' %}"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120910340-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120910340-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBTJRZ7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container head-section">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand"><img id="logo-main-menu" src="{% static 'income/images/convective-cloud-logo-transparent-16x16.png' %}"></a>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <div class="row">
+                
+                <div class="col-md-12" style="vertical-align: middle; text-align:center;">
+                    <!--
+                    <p>
+                        My Profile :
+                        <a class="btn btn-xs" href="https://www.linkedin.com/in/joseph-ambrose-pagaran-phd-04b466ba" target="_blank">LinkedIn </a>
+                        <a class="btn btn-xs" href="http://www.saturnlightning.oeaw.ac.at/project.html" target="_blank">OeAW </a>
+                        <a class="btn btn-xs" href="http://ambrosiobing.wix.com/ambrosiobingcodes" target="_blank">wix</a>
+                    </p>
+                    -->
+                <!--</div>
+                <div class="col-md-8" style="display: table-cell; vertical-align: middle;">-->
+
+                    <!-- Sharingbutton LinkedIn -->
+                    <a class="resp-sharing-button__link" href="https://www.linkedin.com/in/joseph-ambrose-pagaran-phd-04b466ba" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z" /></svg>
+                            </div>
+                        </div>
+                    </a> 
+
+                    <!-- Sharingbutton IWF -->
+                    <a class="resp-sharing-button__link soc-link" href="http://www.saturnlightning.oeaw.ac.at/project.html" target="_blank" title="IWF" aria-label="">
+                        <div class="resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                {% load staticfiles %}
+                                <img src="{% static 'income/images/IWF_logo.svg' %}">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton E-Mail -->
+                    <a class="resp-sharing-button__link" href="mailto:?subject=Convective%20Cloud&amp;body=http%3A%2F%2Fconvective.cloud" target="_self" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" /></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton Wix -->
+                    <a class="resp-sharing-button__link soc-link" href="http://ambrosiobing.wix.com/ambrosiobingcodes" target="_blank" title="Wix" aria-label="">
+                        <div class="resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                {% load staticfiles %}
+                                <img src="{% static 'income/images/icon-wix.svg' %}">
+                            </div>
+                        </div>
+                    </a>
+                    <p>&copy; 2018 <a class="btn btn-sm" href="/">convective.cloud</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="{% static 'income/scripts/tingle.js' %}"></script>
+    <script type="text/javascript">
+        var modalButtonOnly0 = new tingle.modal({
+            closeMethods: [],
+            footer: true,
+            stickyFooter: true
+        });
+        var btn0 = document.querySelector('.js-tingle-modal-0');
+        btn0.addEventListener('click', function(){
+            modalButtonOnly0.open();
+        });
+        modalButtonOnly0.setContent(document.querySelector('.tingle-footer-button-close0').innerHTML);
+
+        modalButtonOnly0.addFooterBtn('Close', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function(){
+            modalButtonOnly0.close();
+        });
+    </script>
+	{% block scripts %}
+    <script src="{% static 'income/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'income/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'income/scripts/respond.js' %}"></script>
+    {% endblock %}
+
+</body>
+</html>
+
